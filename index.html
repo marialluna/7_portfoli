@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 32px;
+    }
+    a{
+        margin: 1cm;
+        text-transform: lowercase;
+    }
+    :root{
+        --blauc: #BDE0FE;
+        --blaulinees: #0088B3;
+        --blau1: #8DDDFF;
+        --blau2: #76CEFF;
+        --blau3: #42BBFF;
+        --rock3d: 'Rock+3D', normal;
+    }
+    .container{
+        padding: 0 2em;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(7, 1 fr);
+        grid-template-rows: repeat(7, 100px);
+        gap: 20px;
+    }
+    body>header{
+        display: flex;
+        padding: 50px 0;
+        text-align: center;
+        height: 100vh;
+        background-color: var(--blauc);
+    }
+    header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+            width: 1440px;
+            height: 17px;
+            left: 0px;
+            top: 0px;
+            background-color: var(--blaulinees);
+    }
+    main{
+        background-color: var(--blauc);
+    }
+    body>main{
+        display: flex;
+        padding: 50px 0;
+        text-align: center;
+        height: 100vh;
+        background-color: var(--blauc);
+    }
+    footer{
+        background-color: var(--blaulinees);
+
+    }
+    footer .container{
+        width: 1440px;
+        height: 99px;
+        left: 0px;
+        top: 1497px;
+        background: #0088B3;
+    }
+    hgroup{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    h1{
+            font-size: 1.5em;
+            margin: 50px;
+            font-family: 'Rock 3D', cursive;
+            color: rgb(0, 64, 121);
+        }
+    p{
+            font-size: 1em;
+            margin: 0 0 2em 0;
+            font-family: var(--rock3d);
+            color: var(--blaulinees);
+        }
+    h2{
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--blaulinees);
+        }
+    h3{
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #DFF7FF;
+        }
+        main a:hover{
+        color: var(--blau3);
+    }
+    .e1, .e2, .e3, .e4, .e5, .e6, .e7, .e8, .e9, .e10{
+    background-color: var(--blau2);
+    }
+    .e1{
+        grid-column:1/2;
+        grid-row:1/3;
+    }
+    .e2{
+        grid-column:2/3;
+        grid-row:1/2;
+    }
+    .e3{
+        grid-column:3/4;
+        grid-row:1/3;
+    }
+    .e4{
+        grid-column:2/3;
+        grid-row:4/5;
+    }
+    .e5{
+        grid-column:1/2;
+        grid-row:3/5;
+    }
+    .e6{
+        grid-column:2/3;
+        grid-row:2/4;
+    }
+    .e7{
+        grid-column:3/4;
+        grid-row:3/5;
+    } 
+        .e1:hover, .e2:hover, .e3:hover, .e4:hover, .e5:hover, .e6:hover, .e7:hover{
+            background-size: cover;
+            background-position: center;
+        }
+        .e1:hover{
+            background-image: url(llocweb.png);
+        }
+        .e2:hover{
+            background-image: url(llocweb_img.png);
+        }
+        .e3:hover{
+            background-image: url(img_video_audio.png);
+        }
+        .e4:hover{
+            background-image: url(gallery.png);
+        }
+        .e5:hover{
+            background-image: url(grid.png);
+        }
+        .e6:hover{
+            background-image: url(neo.png);
+        }
+        .e7:hover{
+            background-image: url(portfoli.png);
+        }
+        @media (max-width: 1024px){
+    body{
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+        background-color: var(--blauc);
+    }
+    main .container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 200px);
+    }
+    .e1{
+        grid-column:1/2;
+        grid-row:1/3;
+    }
+    .e2{
+        grid-column:2/3;
+        grid-row:1/2;
+    }
+    .e3{
+        grid-column:3/4;
+        grid-row:1/3;
+    }
+    .e4{
+        grid-column:1/2;
+        grid-row:3/5;
+    }
+    .e5{
+        grid-column:2/3;
+        grid-row:2/4;
+    }
+    .e6{
+        grid-column:3/4;
+        grid-row:3/5;
+    }
+    .e7{
+        grid-column:2/3;
+        grid-row:4/5;
+    }
+    @media (max-width: 600px){
+    body{
+        flex-direction: column;
+    }
+    main .container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 200px);
+    }
+    .e1{
+        grid-column:1/2;
+        grid-row:1/3;
+    }
+    .e2{
+        grid-column:2/3;
+        grid-row:1/2;
+    }
+    .e3{
+        grid-column:1/2;
+        grid-row:3/4;
+    }
+    .e4{
+        grid-column:2/3;
+        grid-row:2/4;
+    }
+    .e5{
+        grid-column:1/2;
+        grid-row:4/6;
+    }
+    .e6{
+        grid-column:2/3;
+        grid-row:4/5;
+    }
+    .e7{
+        grid-column:2/3;
+        grid-row:5/6;
+    }
+    </style>
+        <body>
+            <header>
+                <div class="container">
+                    <h1>Portfolio</h1>
+                    <p>Maria Lluna Devesa Ramis - 2n Disseny Gràfic</p>   
+                    <p>Este treball trata de mostrar totes les activitats realitzades en el 2n curs de disseny gráfic en la asignatura “sistemes de reproducció avançat” a la EASDalcoi.</p> 
+                </div>
+            </header>
+        <main>
+            <div class="container">
+            <div class="e1">
+                <header>
+                    <a href="https://marialluna.github.io/1_llocweb_2dg/"><h2>1_llocweb</h2></a>
+                </header>
+            </div>
+            <div class="e2">
+                <header>
+                    <a href="https://marialluna.github.io/2_llocweb_img_2dg/"><h2>2_llocweb_img</h2></a>
+                </header>
+            </div>
+            <div class="e3">
+                <header>
+                    <a href="https://marialluna.github.io/3_img_video_audio/"><h2>3_img_video_audio</h2></a>
+                </header>
+            </div>
+            <div class="e4">
+                <header>
+                    <a href="https://marialluna.github.io/4_gallery/"><h2>4_gallery</h2></a>      
+                </header>
+            </div>
+            <div class="e5">
+                <header>
+                    <a href="https://marialluna.github.io/6_grid_responsive/"><h2>5_grid_responsive</h2></a>
+                </header>
+            </div>
+            <div class="e6">
+                <header>
+                    <a href="https://marialluna.github.io/5_grid/"> <h2>6_grid</h2></a>
+                </header>
+            </div>
+            <div class="e7">
+                <header>
+                    <a href=""><h2>7_portfolio</h2></a>  
+                </header>
+            </div>
+            </div>
+        </main>
+        <footer id="xxss">
+            <div class="container">
+                <a href="mailto:devesarm@easdalcoi.es"</a>
+                <h3>E-mail</h3>
+            </div>
+        </footer>
+        </body>
+</html>     
